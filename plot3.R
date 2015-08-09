@@ -1,3 +1,12 @@
+################# Uncomment if the file is not in the current directory #####################################
+
+#fileUrl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+#download.file(fileUrl,destfile="./household_power_consumption.zip")
+#unzip(zipfile="./household_power_consumption.zip")
+
+#######################################################################################################
+
+
 data_full <- read.csv("household_power_consumption.txt", header = T, sep = ';', 
                       na.strings = "?", nrows = 2075259, check.names = F, 
                       stringsAsFactors = F, comment.char = "", quote = '\"')
